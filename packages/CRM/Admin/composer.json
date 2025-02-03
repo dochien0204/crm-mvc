@@ -1,0 +1,27 @@
+{
+    "name": "admin/admin",
+    "description": "admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Webkul",
+            "email": "example@webkul.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "CRM\Admin\\CRM\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\CRM\Admin\\Providers\\CRM\AdminServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

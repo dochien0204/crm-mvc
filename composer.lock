@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "626b9e7ddd47fb7eff9aaa53cce0c9ad",
+    "content-hash": "7e479b893a2163186d5edf4648e77c3b",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1053,51 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "krayin/krayin-package-generator",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krayin/krayin-package-generator.git",
+                "reference": "b9a61169ca985e45e83b9225c885b77692793f39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krayin/krayin-package-generator/zipball/b9a61169ca985e45e83b9225c885b77692793f39",
+                "reference": "b9a61169ca985e45e83b9225c885b77692793f39",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": [],
+                    "providers": [
+                        "Webkul\\PackageGenerator\\Providers\\PackageGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\PackageGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jitendra Singh",
+                    "email": "jitendra@webkul.com"
+                }
+            ],
+            "description": "Krayin Package Generator",
+            "support": {
+                "issues": "https://github.com/krayin/krayin-package-generator/issues",
+                "source": "https://github.com/krayin/krayin-package-generator/tree/v2.0.0"
+            },
+            "time": "2024-09-27T04:57:16+00:00"
         },
         {
             "name": "laravel/framework",
