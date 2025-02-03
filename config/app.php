@@ -129,5 +129,6 @@ return [
         CRM\Admin\Providers\AdminServiceProvider::class,
 
         Konekt\Concord\ConcordServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class
     ])->toArray(),
 ];
