@@ -2,7 +2,6 @@
 
 namespace CRM\Admin\Providers;
 
-use Webkul\Core\Providers\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
@@ -13,5 +12,6 @@ class ModuleServiceProvider extends BaseModuleServiceProvider
      */
     protected $models = [
         //
+        \CRM\Admin\Models\User::class
     ];
 }

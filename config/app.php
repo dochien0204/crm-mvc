@@ -127,5 +127,7 @@ return [
 
     'providers' => ServiceProvider::defaultProviders()->merge([
         CRM\Admin\Providers\AdminServiceProvider::class,
+
+        Konekt\Concord\ConcordServiceProvider::class,
     ])->toArray(),
 ];

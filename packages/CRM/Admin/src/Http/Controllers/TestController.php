@@ -2,9 +2,12 @@
 
 namespace CRM\Admin\Http\Controllers;
 
+use CRM\Admin\Models\User;
+
 class TestController {
 
     public function test() {
-        return response()->json(['data' => 'Test successfully'], 200);
+        $user = User::all();
+        return response()->json(['data' => $user], 200);
     }
 }
