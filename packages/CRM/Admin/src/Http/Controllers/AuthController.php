@@ -1,10 +1,11 @@
 <?php
 
 namespace CRM\Admin\Http\Controllers;
+
+use CRM\Admin\Models\User;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
-use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController
@@ -32,7 +33,7 @@ class AuthController
             return response()->json($validator->errors(), 422);
         }
 
-        if (! $token = auth()->attempt($validator->validated())) {
+        if (! $token = Auth::guard('api')->attempt($validator->validated())) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
@@ -106,7 +107,7 @@ class AuthController
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth()->factory()->getTTL() * 60,
+            'expires_in' => 60 * 60,
             'user' => auth()->user()
         ]);
     }
